@@ -28,6 +28,14 @@ export interface ResumeData {
     start: string;
     end: string;
   }>;
+  certifications: Array<{
+    name: string;
+    issuer: string;
+    date: string;
+    expiryDate?: string;
+    credentialId?: string;
+    credentialUrl?: string;
+  }>;
   work: Array<{
     company: string;
     link: string;
@@ -68,6 +76,15 @@ export interface GraphQLEducation {
   end: string;
 }
 
+export interface GraphQLCertification {
+  name: string;
+  issuer: string;
+  date: string;
+  expiryDate?: string;
+  credentialId?: string;
+  credentialUrl?: string;
+}
+
 export interface GraphQLWork {
   company: string;
   link: string;
@@ -101,6 +118,7 @@ export interface GraphQLMe {
   personalWebsiteUrl: string;
   contact: GraphQLContact;
   education: GraphQLEducation[];
+  certifications: GraphQLCertification[];
   work: GraphQLWork[];
   skills: string[];
   projects: GraphQLProject[];
@@ -136,6 +154,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       social: data.contact.social.map(({ name, url }) => ({ name, url })),
     },
     education: data.education,
+    certifications: data.certifications,
     work: data.work.map((job) => ({
       company: job.company,
       link: job.link,

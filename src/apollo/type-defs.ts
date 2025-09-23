@@ -37,6 +37,27 @@ export class Education {
 }
 
 @ObjectType()
+export class Certification {
+  @Field(() => String)
+  name: string;
+
+  @Field(() => String)
+  issuer: string;
+
+  @Field(() => String)
+  date: string;
+
+  @Field(() => String, { nullable: true })
+  expiryDate?: string;
+
+  @Field(() => String, { nullable: true })
+  credentialId?: string;
+
+  @Field(() => String, { nullable: true })
+  credentialUrl?: string;
+}
+
+@ObjectType()
 export class Work {
   @Field(() => String)
   company: string;
@@ -115,6 +136,9 @@ export class Me {
 
   @Field(() => [Education])
   education: Education[];
+
+  @Field(() => [Certification])
+  certifications: Certification[];
 
   @Field(() => [Work])
   work: Work[];

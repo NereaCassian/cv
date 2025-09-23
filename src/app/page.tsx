@@ -5,9 +5,10 @@ import { SectionErrorBoundary } from "@/components/section-error-boundary";
 import { SectionSkeleton } from "@/components/section-skeleton";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
+import { Certifications } from "./components/Certifications";
 import { Education } from "./components/Education";
 import { Header } from "./components/Header";
-import { Projects } from "./components/Projects";
+//import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
+        url: "https://cv.sigterm.vodka/opengraph-image",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
+    images: ["https://cv.sigterm.vodka/opengraph-image"],
   },
 };
 
@@ -108,17 +109,23 @@ export default function ResumePage() {
               </Suspense>
             </SectionErrorBoundary>
 
+            <SectionErrorBoundary sectionName="Certifications">
+              <Suspense fallback={<SectionSkeleton lines={3} />}>
+                <Certifications certifications={RESUME_DATA.certifications} />
+              </Suspense>
+            </SectionErrorBoundary>
+
             <SectionErrorBoundary sectionName="Skills">
               <Suspense fallback={<SectionSkeleton lines={2} />}>
                 <Skills skills={RESUME_DATA.skills} />
               </Suspense>
             </SectionErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Projects">
+            {/* <SectionErrorBoundary sectionName="Projects">
               <Suspense fallback={<SectionSkeleton lines={5} />}>
                 <Projects projects={RESUME_DATA.projects} />
               </Suspense>
-            </SectionErrorBoundary>
+            </SectionErrorBoundary> */}
           </div>
         </section>
 

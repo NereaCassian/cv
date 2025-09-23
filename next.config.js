@@ -78,3 +78,9 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+// Import and initialize OpenNext Cloudflare for development
+if (process.env.NODE_ENV === 'development') {
+  const { initOpenNextCloudflareForDev } = require("@opennextjs/cloudflare");
+  initOpenNextCloudflareForDev();
+}

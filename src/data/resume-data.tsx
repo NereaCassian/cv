@@ -1,237 +1,211 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Nerea Kalandadze",
+  initials: "NK",
+  location: "Seville, Spain, CET",
+  locationLink: "https://www.google.com/maps/place/Seville",
+  about: "SecDevOps, SRE Engineer and Pentester",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Experienced SecDevOps/SRE Engineer and Sysadmin. I have deployed, improved, maintained secure and reliable cloud
+      infrastructure in providers like GCP and AWS using IaC tools like Terraform. I have experience in CICD pipelines in native cloud
+      products like CloudBuild CodePipeline. I also have experience in cybersecurity, improving security in client environments and
+      testing it against possible vulnerabilities.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://cdn.yellowumbrella.dev/pic.png",
+  personalWebsiteUrl: "https://sigterm.vodka",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "me@sigterm.vodka",
+    tel: "+34611588382",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/NereaCassian",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/nerea-kalandadze/",
         icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "ULL",
+      degree: "Computer Science Degree",
+      start: "2016",
+      end: "2019",
+    },
+    {
+      school: "CESUR",
+      degree: "Game Dev Professional Course",
+      start: "2020",
+      end: "2022",
+    },
+  ],
+  certifications: [
+    {
+      name: "Cloud Architec",
+      issuer: "Amazon Web Services",
+      date: "2025",
+      expiryDate: "2028",
+    },
+    {
+      name: "Cloud Architec",
+      issuer: "Google Cloud",
+      date: "2025",
+      expiryDate: "2028",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
-      end: null,
+      company: "Typsa",
+      link: "https://www.typsa.com/",
+      badges: ["DevOps", "Onprem to Cloud", "CI/CD", "AD", "Security", "GCP"],
+      title: "Fullstack Developer and DevOps",
+      start: "2022",
+      end: "2022",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
+          <ul className="list-inside list-disc">
+            <li>
+              I migrated an old on premise set of microservice to GCP improving security and reliability of the
+              services. Creating development, preview and production environments and improved the code delivery
+              process, reducing code issues and downtime
+            </li>
+            <li>
+              I developed a CICD pipeline using Jenkins, so developers could deploy new versions of the services.
+            </li>
+            <li>
+              I reworked and secured the company Active Directory and solved the present security issues.
+            </li>
+            <li>
+              I developed a IAM, onboarding and developer access management system to make permission
+              management easier and more secure, and dispositions of accounts for new employees.
+            </li>
+          </ul>
         </>
       ),
     },
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
+      company: "GIGAS Hosting",
+      link: "https://gigas.com/",
+      badges: [
+        "Sysadmin",
+        "Linux",
+        "KVM",
+        "Qemu",
+        "Virtualization",
+        "Windows",
+        "Linux",
+        "Security",
+        "Own Cloud"
+      ],
+      title: "LV2 Support and Sysadmin",
+      start: "2022",
+      end: "2023",
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Offered advanced support for clients that were hired products and virtual machines that ran on KVM
+              and Qemu. I helped them deploy software to the virtual machines like databases, ORM, CMS, and also
+              helped them manage and maintain those products.
+            </li>
+            <li>
+              Improved the process and the software used for the virtual machines' orchestration, managing and
+              disposition, reducing downtime and improving its performance
+            </li>
+            <li>
+              Improved security in internal software used for daily internal tasks like accounting and VM and
+              infrastructure management            
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "Making Science",
+      link: "https://www.makingscience.com/",
+      badges: ["Remote", "DevOps", "GCP & AWS", "Kubernetes", "Terraform", "Ansible", "Python", "Security"],
+      title: "Lead Android Developer → Full Stack Developer",
+      start: "2023",
       end: "2025",
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Worked deploying, maintaining, securing, improving and monitoring cloud infrastructure orchestrated using
+              Terraform and Ansible, both for clients and internal products of the company
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Pentested and improved security in client environments, managing IAM and monitoring events.
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Implemented monitoring and alert systems for client environments and participated in the On Call rotation.
+            </li>
+            <li>
+              Developed CICD pipelines and code delivery procedures.
+            </li>
+            <li>
+              Deployed and maintained cost optimized Kubernetes Clusters.
+            </li>
+            <li>
+              Developed AI solutions like chatbots, ad and Social Media content creators, and Marketing analysis tools
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
-      description: (
-        <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
+      company: "KaveTech",
+      link: "https://kavehome.com/",
+      badges: ["Remote","IAC", "Kubernetes", "Terraform", "Python", "Security", "GCP", "On Premise"],
       title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
+      start: "2025",
+      end: "Present",
       description: (
         <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
           <ul className="list-inside list-disc">
             <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
+              Lead in the usage of IAC tools like Terraform to deploy and manage the company's infrastructure.
             </li>
-            <li>Built and mentored high-performing mobile development team</li>
+              Lead the efforts to improve the security of the company's infrastructure, on premise servers, office security, etc.
+            <li>
+              Maintain and improve the company's Kubernetes Clusters.
+            </li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
-    },
+    }
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "DevOps",
+    "GCP & AWS",
+    "Kubernetes",
+    "Terraform",
+    "Ansible",
+    "Python",
+    "Security",
+    "On Premise",
+    "CI/CD",
+    "AD",
+    "Linux",
+    "Windows",
+    "Virtualization",
+    "Qemu",
+    "KVM",
+    "Pentesting",
+    "AI",
+    "SecOps",
+    "SRE",
+    "Sysadmin",
+    "RedTeam",
+    "BlueTeam"
   ],
   projects: [
-    {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
-      description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
-    },
   ],
 } as const;
