@@ -131,7 +131,7 @@ export const RESUME_DATA: ResumeData = {
       company: "Making Science",
       link: "https://www.makingscience.com/",
       badges: ["Remote", "DevOps", "GCP & AWS", "Kubernetes", "Terraform", "Ansible", "Python", "Security"],
-      title: "Lead Android Developer → Full Stack Developer",
+      title: "DevSecOps Engineer",
       start: "2023",
       end: "2025",
       description: (
@@ -164,7 +164,7 @@ export const RESUME_DATA: ResumeData = {
       company: "KaveTech",
       link: "https://kavehome.com/",
       badges: ["Remote","IAC", "Kubernetes", "Terraform", "Python", "Security", "GCP", "On Premise"],
-      title: "Android Developer → Lead Android Developer",
+      title: "DevSecOps Engineer and Cibersecurity analyst",
       start: "2025",
       end: "Present",
       description: (
