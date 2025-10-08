@@ -171,16 +171,18 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Lead in the usage of IAC tools like Terraform to deploy and manage the company's infrastructure.
+              Lead in the adoption of IAC tools like Terraform to deploy and manage the company's infrastructure.
             </li>
+            <li>
               Lead the efforts to improve the security of the company's infrastructure, on premise servers, office security, etc.
+            </li>
             <li>
               Maintain and improve the company's Kubernetes Clusters.
             </li>
           </ul>
         </>
       ),
-    }
+    },
   ],
   skills: [
     "DevOps",
