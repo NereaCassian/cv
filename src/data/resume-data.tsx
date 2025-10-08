@@ -37,7 +37,7 @@ export const RESUME_DATA: ResumeData = {
       school: "ULL",
       degree: "Computer Science Degree",
       start: "2016",
-      end: "2019",
+      end: "2020",
     },
     {
       school: "CESUR",
@@ -48,13 +48,13 @@ export const RESUME_DATA: ResumeData = {
   ],
   certifications: [
     {
-      name: "Cloud Architec",
+      name: "Cloud Architect",
       issuer: "Amazon Web Services",
       date: "2025",
       expiryDate: "2028",
     },
     {
-      name: "Cloud Architec",
+      name: "Cloud Architect",
       issuer: "Google Cloud",
       date: "2025",
       expiryDate: "2028",
